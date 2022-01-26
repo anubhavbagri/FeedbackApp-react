@@ -1,11 +1,9 @@
-import React from 'react';
-
 function App() {
-  return React.createElement(
-    'div',
-    { className: 'container' },
-    // {} i.e. no attributes
-    React.createElement('h1', {}, 'My App')
+  return (
+    <div className="container">
+      <h1>My App</h1>
+      <p>Hello</p>
+    </div>
   );
 }
 
