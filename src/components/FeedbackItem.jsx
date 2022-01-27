@@ -7,7 +7,10 @@ function FeedbackItem() {
   const [text, setText] = useState('This is an example of a feedback item');
 
   const handleClick = () => {
-    setRating(10);
+    setRating((prev) => {
+      console.log(prev); // using previous value
+      return prev + 1;
+    });
   };
 
   return (
